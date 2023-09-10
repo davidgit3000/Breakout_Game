@@ -1,0 +1,89 @@
+.grid {
+  position: absolute;
+  width: 560px;
+  height: 300px;
+  border: 10px solid black;
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: blue;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: purple;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
+  width: 560px;
+  justify-content: center;
+}
+
+.pushable {
+  background: black;
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.start {
+  display: block;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  background: greenyellow;
+  color: black;
+  transform: translateY(-6px);
+}
+
+.pushable:active .start {
+  transform: translateY(-2px);
+}
+
+.start:hover {
+  background-color: #689316;
+  color: white;
+  transition: 0.2s;
+}
+
+.reset {
+  display: block;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  background: red;
+  color: black;
+  transform: translateY(-6px);
+}
+
+.reset:hover {
+  background-color: #d21312;
+  color: white;
+  transition: 0.2s;
+}
+
+.pushable:active .reset {
+  transform: translateY(-2px);
+}
+
+/* Make a 3D button: https://www.joshwcomeau.com/animation/3d-button/ */
